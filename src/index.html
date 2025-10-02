@@ -5,12 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers commerce</title>
+    <script src="./index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link rel="shortcut icon" href="../assets/main/logo-header.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
-<body>
+<body class="p-[4vw] bg-[#E7F6FF]">
+    <div class="cart-menu w-150 h-screen bg-white top-0 right-[-100%] fixed p-10 flex flex-col z-10">
+        <div class="flex flex-col gap-10 overflow-y-scroll scrollbar-hide">
+            <h2 class="font-bold text-2xl">Корзина</h2>
+            <div class="flex flex-col gap-5">
+                <div class="flex items-center gap-5 justify-left border-1 border-gray-200 p-5 rounded-2xl">
+                    <img class="w-50" src="../assets/products/sneaker-1.jpg" alt="sneaker">
+                    <div class="relative">
+                        <p class="text-xl">Мужские Кроссовки Nike Blazer Mid Suede</p>
+                        <p class="font-bold">40 000 тг.</p>
+                        <img class="absolute bottom-[-20px] right-0 w-10" src="../assets/icons/remove-card.svg"
+                            alt="close icon">
+                    </div>
 
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 text-xl">
+                <div class="flex items-center justify-between">
+                    <p>Итого: </p>
+                    <span class="font-bold">21 498 руб. </span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <p>Налог 5%: </p>
+                    <span class="font-bold">1074 руб. </span>
+                </div>
+                <div
+                    class="bg-[#9DD458] rounded-xl text-white flex items-center justify-between p-3 h-15 px-10 cursor-pointer">
+                    <div></div>
+                    <p class="text-xl font-bold">Оформить заказ</p>
+                    <img src="../assets/icons/arrow-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white p-[3vw] rounded-2xl">
+        <header class="flex items-center justify-between mb-10">
+            <div class="logo flex items-center gap-5">
+                <img src="../assets/main/logo-header.png" alt="">
+                <div class="logo-text">
+                    <h1 class="text-3xl font-bold">Sneakers RPO6</h1>
+                    <p class="text-slate-400">Магазин лучших кроссовок</p>
+                </div>
+            </div>
+            <nav class="flex items-center gap-5">
+                <div class="cart-btn flex items-center gap-2 cursor-pointer">
+                    <img src="../assets/icons/header/cart.svg" alt="">
+                    <p class="text-slate-500">1205 тг.</p>
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <img src="../assets/icons/header/favourite.svg" alt="">
+                    <p class="text-slate-500">Избранное</p>
+                </div>
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <img src="../assets/icons/header/profile.svg" alt="">
+                    <p class="text-slate-500">Профиль</p>
+                </div>
+            </nav>
+        </header>
+        <hr class="h-0.5 mx-auto my-4 bg-gray-400 border-0 rounded-sm md:my-10 dark:bg-gray-300">
+
+        <section class="products">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-2xl font-bold">Все кроссовки</h2>
+                <div class="search flex items-center gap-2 border-1 border-gray-200 py-2 px-3 rounded-xl">
+                    <img src="../assets/icons/search.svg" alt="search icon">
+                    <input placeholder="Поиск..." type="text" class="outline-none">
+                </div>
+            </div>
+            <div class="cards flex justify-center flex-wrap gap-10">
+                <!-- <div class="card border-1 border-gray-200 p-5 flex flex-col w-70 rounded-2xl gap-4">
+                    <img class=" absolute" src="../assets/icons/like-disabled.svg" alt="">
+                    <img class="w-70" src="../assets/products/sneaker-1.jpg" alt="sneaker">
+                    <p class="font-[500] text-xl">Мужские Кроссовки Nike Blazer Mid Suede</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-gray-300">ЦЕНА:</span>
+                            <p class="font-bold">40 000 тг.</p>
+                        </div>
+                        <img src="../assets/icons/add-product-disabled.svg" alt="">
+                    </div>
+                </div>
+                <div class="card border-1 border-gray-200 p-5 flex flex-col w-70 rounded-2xl gap-4">
+                    <img class=" absolute" src="../assets/icons/favourite-active.svg" alt="">
+                    <img class="w-70" src="../assets/products/sneaker-2.jpg" alt="sneaker">
+                    <p class="font-[500] text-xl">Мужские Кроссовки Nike Blazer Mid Suede</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="font-bold text-gray-300">ЦЕНА:</span>
+                            <p class="font-bold">40 000 тг.</p>
+                        </div>
+                        <img src="../assets/icons/add-product-active.svg" alt="">
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+
+
+
+
+
+    </div>
 </body>
 
 </html>

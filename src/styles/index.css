@@ -1,0 +1,11 @@
+.scrollbar-hide {
+    /* Для Internet Explorer, Edge */
+    -ms-overflow-style: none;
+    /* Для Firefox */
+    scrollbar-width: none;
+}
+
+/* Для Chrome, Safari и Opera (WebKit) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
